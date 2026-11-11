@@ -1,0 +1,5 @@
+
+// Equivalent to /(a+)+b/ for test(): any "a+b" occurrence contains "ab"
+const pattern = /ab/;
+let dynamicCode = () => console.log('Hello from dynamic code!');
+dynamicCode();
