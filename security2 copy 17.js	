@@ -1,0 +1,9 @@
+
+const dynamicCodeHandlers = {
+  "console.log('Hello from dynamic code!')": () => console.log('Hello from dynamic code!')
+};
+const dynamicCodeHandler = dynamicCodeHandlers[dynamicCode];
+if (!dynamicCodeHandler) {
+  throw new Error(`Unknown dynamic code: ${dynamicCode}`);
+}
+dynamicCodeHandler();
