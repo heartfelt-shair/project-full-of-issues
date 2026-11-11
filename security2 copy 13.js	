@@ -1,0 +1,5 @@
+
+let dynamicCode = () => console.log('Hello from dynamic code!');
+dynamicCode();
+let dynamicCode = () => console.log('Hello from dynamic code!');
+dynamicCode();
