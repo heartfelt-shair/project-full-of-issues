@@ -1,0 +1,6 @@
+
+// eslint-disable-next-line no-console
+let dynamicCode = () => console.log('Hello from dynamic code!');
+// eslint-disable-next-line no-console
+let dynamicCode = () => console.log('Hello from dynamic code!');
+dynamicCode();
