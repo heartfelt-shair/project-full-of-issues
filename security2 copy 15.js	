@@ -1,0 +1,7 @@
+
+// Equivalent to /(a+)+b/ for test(): any match implies an "ab" substring
+const pattern = /ab/;
+let dynamicCode = function () {
+  console.log('Hello from dynamic code!');
+};
+dynamicCode();
