@@ -20,8 +20,7 @@ for (let i = 0; i < 5; i++) { // Non-compliant use of "==" instead of "===".
     }
 }
 
-let evalString = 'console.log(\'This is not good.\')'; 
-eval(evalString); // Use of eval: Major security issue
+console.log('This is not good.');
 
 setTimeout(() => {
     console.log('This is a delayed log.');
