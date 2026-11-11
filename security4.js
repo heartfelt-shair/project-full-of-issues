@@ -1,8 +1,8 @@
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
-eval(dynamicCode);
+let dynamicCode = () => console.log('Hello from dynamic code!');
+dynamicCode();
 
 // Document DOM Modification
 document.domain = "example.com";
@@ -19,7 +19,7 @@ const url = "http://example.com";
 window.open(url);
 
 // RegExp Denial of Service (ReDoS)
-const pattern = /(a+)+b/;
+const pattern = /ab/;
 const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
 pattern.test(userInput);
 
@@ -48,8 +48,8 @@ exec(`echo ${userProvidedValue}`);
 // security-hotspots.js
 
 // Use of eval
-let dynamicCode = "console.log('Hello from dynamic code!')";
-eval(dynamicCode);
+let dynamicCode = () => console.log('Hello from dynamic code!');
+dynamicCode();
 
 // Document DOM Modification
 document.domain = "example.com";
@@ -66,7 +66,7 @@ const url = "http://example.com";
 window.open(url);
 
 // RegExp Denial of Service (ReDoS)
-const pattern = /(a+)+b/;
+const pattern = /ab/;
 const userInput = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaa!";
 pattern.test(userInput);
 

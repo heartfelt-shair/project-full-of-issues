@@ -1,0 +1,5 @@
+
+const pattern = /ab/;
+let dynamicCode = () => console.log('Hello from dynamic code!');
+let dynamicCode = () => console.log('Hello from dynamic code!');
+dynamicCode();
